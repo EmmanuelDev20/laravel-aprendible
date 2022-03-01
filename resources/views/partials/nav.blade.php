@@ -1,8 +1,8 @@
 <nav>
   <ul>
-    <li class="{{ setActive('home') }}"><a  href="/">Home</a></li>
-    <li class="{{ setActive('about') }}"><a href="/about">About</a></li>
-    <li class="{{ setActive('portfolio') }}"><a href="/portfolio">Portafolio</a></li>
-    <li class="{{ setActive('contact') }}"><a href="/contact">Contacto</a></li>
+    <li class="{{ setActive('home') }}"><a  href="/">{{ __('Home')}}</a></li>
+    <li class="{{ setActive('about') }}"><a href="/about">{{ __('About')}}</a></li>
+    <li class="{{ setActive('portfolio') }}"><a href="/portfolio">{{ __('Portfolio')}}</a></li>
+    <li class="{{ setActive('contact') }}"><a href="/contact">@lang('Contact')</a></li>
   </ul>
 </nav>

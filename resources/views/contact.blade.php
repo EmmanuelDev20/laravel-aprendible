@@ -3,7 +3,7 @@
 @section('title', 'Contacto')
 
 @section('content')
-    <h1>Contacto</h1>
+    <h1>{{ __('Contact') }}</h1>
 
     {{-- @if ($errors->any)
         @foreach ($errors->all() as $error)
@@ -23,6 +23,9 @@
           {{ $message }}
       @enderror
       <input type="text" name="email" placeholder="Email">
+      @error('email')
+          {{ $message }}
+      @enderror
       <input type="text" name="subject" placeholder="Asunto">
       <textarea name="content" id="content" placeholder="Mensaje"></textarea>
       <button type="submit">Enviar formulario</button>
